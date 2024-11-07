@@ -15,11 +15,11 @@ public class Main {
         product.name = sc.nextLine();
         System.out.print("Preço: ");
         product.price = sc.nextDouble();
-        System.out.println("Quantidade: ");
+        System.out.print("Quantidade: ");
         product.quantity = sc.nextInt();
 
 
-
+        System.out.println(product);
 
         sc.close();
 
