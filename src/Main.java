@@ -19,7 +19,23 @@ public class Main {
         product.quantity = sc.nextInt();
 
 
-        System.out.println(product);
+        System.out.println("Dados do produto: " + product);
+
+        System.out.println();
+
+        System.out.println("Digite um número de produtos a serem adicionados no estoque: ");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
+
+        System.out.println("Dados do produto: " + product);
+
+        System.out.println();
+
+        System.out.println("Digite um número de produtos a serem removidos: " );
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
+
+        System.out.println("Dados do produto: " + product);
 
         sc.close();
 
